@@ -1,14 +1,20 @@
-lst = [1,5,342,2345,5743,12342,45,2,8,0]
-minimum_value = min(lst)
-max_value = max(lst)
+a = []
+b = int(input("Enter the size: "))
+for i in range(b):
+    c = int(input("Enter the values: "))
+    a.append(c)
 
-length_of_lsit = len(lst)
+print("The given list is:", a)
 
-print(f'Minimum Value of the list is {minimum_value}')
-print(f'Maximum Value of the list is {max_value}')
-print(f'Length of the list is {length_of_lsit}')
-print(f'Minimum Value of the list is {minimum_value}')
-lst.sort()
-print(f'Sorted List is {lst}')
-lst.reverse()
-print(lst)
+max_value = max(a)
+min_value = min(a)
+count = len(a)
+total_sum = sum(a)
+print("Max value of list is:", max_value)
+print("Min value of list is:", min_value)
+print("Count of elements in the list is:", count)
+print("Sum of elements in the list is:", total_sum)
+a.sort()
+print("The sorted list is:", a)
+a.reverse()
+print("The reverse of the list is:", a)
